@@ -1,4 +1,5 @@
 #!/usr/bin/python -tt
+# Importar Flask
 import time
 from flask import Flask, redirect, render_template, request
 # Instancia de Flask. Aplicación
@@ -9,7 +10,7 @@ app = Flask(__name__, template_folder='template')
 @app.route('/')
 # Función para llamar a la página index.html
 def index():
-    return render_template("skincare.html")
+    return render_template("principal.html")
 
 
 # main del programa
