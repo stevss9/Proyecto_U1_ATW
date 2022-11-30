@@ -11,6 +11,7 @@ app = Flask(__name__, template_folder='template')
 # Función para llamar a la página index.html
 def index():
     return render_template("principal.html")
+<<<<<<< HEAD
 
 
 
@@ -44,6 +45,8 @@ def MG():
 # Función para llamar a la página index.html
 def RG():
     return render_template("RG.html")
+=======
+>>>>>>> ab6e27bdfd72d5f7f56dee07dac443e589535637
 
 
 # main del programa
