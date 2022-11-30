@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--by:stevss-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css')}}">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <title>Sitio Web de Ventas - MARY'S</title>
+</head>
+
+
+<body>
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <div class="contenedor-logo">
+            <a href="/">
+                <img src="../static/images/logo.png" height="150px" width="400px">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:white;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navegación en las diferentes subpages-->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 " style="font-size: 20px;">
+                    <!--Pagina de Inicio-->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <!--Lista deplegable ropa-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ropa</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('MA') }}">Camisas</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('MG') }}">Pantalones</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('LM') }}">Sandalias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Lista desplegable tecnologia-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Tecnologia</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('SS') }}">Telefonos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="#">Computadoras</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Seccion Nosotros-->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="{{ url_for('RG') }}">SkinCare</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+    <!--NO EDITAR-->
+
+    <!--EDITAR DE AQUI PARA ABAJO-->
+    <!-- Página Header-->
+    <div class="container-fluid">
+        <!--Cards-->
+        <div class="card" style="color: black;">
+            <div class="card-header">
+                Celulares
+            </div>
+            <div class="card-body card">
+                <blockquote class="blockquote mb-0">
+                    <!--Seccion 1-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://novicompu.vtexassets.com/arquivos/ids/165699-800-auto?v=637944620237970000&width=800&height=auto&aspect=true"
+                                            class="img-fluid rounded-start" height="600">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardcolor">
+                                            <h5 class="card-title">$238,00</h5>
+                                            <p class="card-text">Celular Infinix NOTE 12 8GB + 256GB X670</p>
+                                            <p class="card-text">
+                                                <button class="btn btn-success" type="button">Comprar
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://novicompu.vtexassets.com/arquivos/ids/161495/1CXIA1381.jpg?v=637648100589400000"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardcolor">
+                                            <h5 class="card-title">$295,00</h5>
+                                            <p class="card-text">Celular Xiaomi Redmi Note 10 PRO 8gb+128gb</p>
+                                            <p class="card-text">
+                                                <button class="btn btn-success" type="button">Comprar
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Seccion 2-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://mobilestore.ec/wp-content/uploads/2022/03/Xiaomi-Poco-X4-Pro-5G-Negro-Mobile-Store-Ecuador.jpg"
+                                            class="img-fluid rounded-start" height="600">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardcolor">
+                                            <h5 class="card-title">$338,00</h5>
+                                            <p class="card-text">Celular Xiaomi Poco X4 pro 5G, 8gb, 256gb dual sim</p>
+                                            <p class="card-text">
+                                                <button class="btn btn-success" type="button">Comprar
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://mundotek.com.ec/wp-content/uploads/2022/06/iphone-11-3.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardcolor">
+                                            <h5 class="card-title">$995,00</h5>
+                                            <p class="card-text">Celular iphone 11 128gb</p>
+                                            <p class="card-text">
+                                                <button class="btn btn-success" type="button">Comprar
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Seccion 3-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://www.lavictoria.ec/wp-content/uploads/2022/07/CELULAR-REDMI-10C-4GB-128GB-XIAOMI-AZUL-1.jpg"
+                                            class="img-fluid rounded-start" height="600">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardcolor">
+                                            <h5 class="card-title">$138,00</h5>
+                                            <p class="card-text">Celular Xiaomi Redmi 10C 4gb, 64gb, dual sim</p>
+                                            <p class="card-text">
+                                                <button class="btn btn-success" type="button">Comprar
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://www.idcmayoristas.com/wp-content/uploads/2022/05/XIAOMI-IDC-MAYORISTA-REDMI-6.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardcolor">
+                                            <h5 class="card-title">$395,00</h5>
+                                            <p class="card-text">Celular POCO M4 pro 8gb, 256gb, dual sim</p>
+                                            <p class="card-text">
+                                                <button class="btn btn-success" type="button">Comprar
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Siguiente</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <!--EDITAR DE AQUI PARA ARRIBA-->
+
+    <!--NO EDITAR-->
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start foter text-muted">
+
+        <!-- Links donde tenemos otros enlaces de la pagina-->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Mary's Shop Online
+                        </h6>
+                        <p>
+                            Más momentos felices, mas… Mary's Shop Online, donde todos somos Fashion,
+                            por que
+                            tú y tu familia se lo merecen.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Categorias
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Ropa</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Tecnologia</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Nosotros</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            links
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">Catálogo</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column  se divide en columnas -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactanos
+                        </h6>
+                        <!-- Aqui va el nombre de la direccion  -->
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                            </svg> Santo Domingo de los Tsachilas, Ecuador.</p>
+                        <p>
+                            <!-- aqui va el gmail de nuestro restaurante  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            grupo6atw@espe.edu.ec
+                        </p>
+                        <!-- aqui va nuestro numero celular, esta la ruta del celular esta valida envio correcto -->
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                            </svg> (593) 999 999 999</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark">
+            <div class="contenedor-footer text-white">
+                <small>&copy; 2022 <b>Universidad de las Fuerzas Armadas ESPE</b>
+            </div>
+        </footer>
+</body>
+
+</html>

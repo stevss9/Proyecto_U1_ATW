@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--by:stevss-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css')}}">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <title>Sitio Web de Ventas - MARY'S</title>
+</head>
+
+
+<body>
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <div class="contenedor-logo">
+            <a href="/">
+                <img src="../static/images/logo.png" height="150px" width="400px">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:white;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navegación en las diferentes subpages-->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 " style="font-size: 20px;">
+                    <!--Pagina de Inicio-->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <!--Lista deplegable ropa-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ropa</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('MA') }}">Camisas</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('MG') }}">Pantalones</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('LM') }}">Sandalias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Lista desplegable tecnologia-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Tecnologia</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item text-dark" href="{{ url_for('SS') }}">Telefonos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="#">Computadoras</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Seccion Nosotros-->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="{{ url_for('RG') }}">SkinCare</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+    <!--NO EDITAR-->
+
+    <!--EDITAR DE AQUI PARA ABAJO-->
+    <!-- Página Header-->
+    <header class="masthead fondo"
+        style="background-image: url('https://ecuador.unir.net/wp-content/uploads/sites/8/2021/01/Moda_8_reducida-e1644396456452.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7 justify-content-center">
+
+                    <div class="site-heading">
+                        <h1 id="titu2">Mary's Shop</h1>
+                        <span class="subheading" id="titu2">Comienza tu día con unos zapatos perfectos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Sección sobre nosotros-->
+    <section class="vh-500" style="background-color: #fdf4f4;" id="blockquote">
+        <div class="container py-5 h-500">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-8 col-xl-7">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+
+                            <div class="text-center mb-4 pb-2">
+                                <img src="../static/images/carrusel/rachel.jpg" alt="Bulb" height="300">
+                            </div>
+
+                            <figure class="text-center mb-0">
+                                <blockquote class="blockquote">
+                                    <p class="pb-3">
+                                        <i class="fas fa-quote-left fa-xs text-primary"></i>
+                                    <h2 id="sobrenosotros">Fundadora Empresarial</h2>
+                                    <span class="lead font-italic">Rachel Garces (born August 08, 1999) is an
+                                        American media personality, socialite, and businesswoman. She starred in the E!
+                                        reality television series Keeping Up with the Kardashians from 2007 to 2021 and
+                                        is the founder and owner of cosmetic company Kylie Cosmetics. She is the
+                                        third-most-followed person on Instagram.</span>
+                                    <i class="fas fa-quote-right fa-xs text-primary"></i>
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0">
+                                    Mary's Shop
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EDITAR DE AQUI PARA ARRIBA-->
+
+    <!--NO EDITAR-->
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start foter text-muted">
+
+        <!-- Links donde tenemos otros enlaces de la pagina-->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Mary's Shop Online
+                        </h6>
+                        <p>
+                            Más momentos felices, mas… Mary's Shop Online, donde todos somos Fashion, por que
+                            tú y tu familia se lo merecen.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Categorias
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Ropa</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Tecnologia</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Nosotros</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            links
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">Catálogo</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column  se divide en columnas -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactanos
+                        </h6>
+                        <!-- Aqui va el nombre de la direccion  -->
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                            </svg> Santo Domingo de los Tsachilas, Ecuador.</p>
+                        <p>
+                            <!-- aqui va el gmail de nuestro restaurante  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            grupo6atw@espe.edu.ec
+                        </p>
+                        <!-- aqui va nuestro numero celular, esta la ruta del celular esta valida envio correcto -->
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                            </svg> (593) 999 999 999</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark">
+            <div class="contenedor-footer text-white">
+                <small>&copy; 2022 <b>Universidad de las Fuerzas Armadas ESPE</b>
+            </div>
+        </footer>
+</body>
+
+</html>
